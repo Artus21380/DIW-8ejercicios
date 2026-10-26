@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Mercado en Azeroth</title>
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 1rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            background: #f5f0e6;
+        }
+
+        h1 {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: #8b5a2b;
+        }
+
+        .card {
+            border: 2px solid;
+            padding: 1rem;
+            border-radius: 6px;
+            background: white;
+        }
+
+        [data-category="armas"] {
+            border-color: #b91c1c;
+        }
+
+        [data-category="armadura"] {
+            border-color: #4078f2;
+        }
+
+        [data-category="consumibles"] {
+            border-color: #059669;
+        }
+
+        .precio {
+            font-weight: 700;
+            color: #8b5a2b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Volver</a>
+        </nav>
+    </header>
+
+    <h1>Subasta</h1>
+
+    <article class="card" data-category="armas">
+        <h2>Espada de la Justicia</h2>
+        <p class="precio">450 monedas de oro</p>
+        <p>Una espada preparada para enfrentarse a los enemigos de la Alianza.</p>
+    </article>
+
+    <article class="card" data-category="armadura">
+        <h2>Armadura de placas</h2>
+        <p class="precio">320 monedas de oro</p>
+        <p>Una resistente armadura para proteger a los guerreros en combate.</p>
+    </article>
+
+    <article class="card" data-category="consumibles">
+        <h2>Poción de sanación</h2>
+        <p class="precio">25 monedas de oro</p>
+        <p>Recupera salud durante tus aventuras por Azeroth.</p>
+    </article>
+
+    <br>
+    <footer>
+        &copy; José Francisco Argüez Gómez | 2º GS - DAW - X
+    </footer>
+
+</body>
+</html>

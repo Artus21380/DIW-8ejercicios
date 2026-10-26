@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>World of Warcraft</title>
+    <style>
+        h1 {color:rgb(235, 149, 38)}
+        body{font-family:system-ui;margin:1rem;max-width:600px}
+        fieldset{border:1px solid #ccc;padding:1rem}
+        label{display:block;margin-top:.7rem}
+        input[type=range]{width:100%}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Volver</a>
+        </nav>
+    <h1>Reserva tu grupo de WoW</h1>
+    </header>
+
+    <form action="#">
+    <fieldset>
+        <legend>Datos del jugador</legend>
+
+        <label>Nombre del personaje
+        <input type="text" name="personaje" required />
+        </label>
+
+        <label>E-mail
+        <input type="email" name="email" required />
+        </label>
+
+        <label>Fecha de la actividad
+        <input type="date" name="fecha" required />
+        </label>
+
+        <p>Horario</p>
+        <label>
+        <input type="radio" name="horario" value="tarde" required />Tarde 19:00h-21:00h
+        </label>
+
+        <label>
+        <input type="radio" name="horario" value="noche" required />Noche 22:00h-00:00h
+        </label>
+
+        <label>Clase</label>
+            <select name="clase" required>
+                <option value="">Selecciona una clase</option>
+                <option value="guerrero">Guerrero</option>
+                <option value="paladin">Paladín</option>
+                <option value="cazador">Cazador</option>
+                <option value="picaro">Pícaro</option>
+                <option value="mago">Mago</option>
+                <option value="sacerdote">Sacerdote</option>
+                <option value="brujo">Brujo</option>
+                <option value="druida">Druida</option>
+                <option value="chaman">Chamán</option>
+                <option value="monje">Monje</option>
+                <option value="cazador de demonios">Cazador de demonios</option>
+                <option value="evocador">Evocador</option>
+                <option value="caballero de la muerte">Caballero de la Muerte</option>
+        </select>
+
+        <p>Rol</p>
+
+        <label>
+        <input type="radio" name="rol" value="tanque" required />Tanque
+        </label>
+
+        <label>
+        <input type="radio" name="rol" value="sanador" />Sanador
+        </label>
+
+        <label>
+        <input type="radio" name="rol" value="dps" />DPS
+        </label>
+
+        <label>Nivel de experiencia (10 niveles -> 1 ninguna - 10 pro)</label>
+        <input type="range" name="experiencia" min="1" max="10" value="5" />
+
+        <label>
+            <input type="checkbox" name="consumibles" />Llevaré pociones y consumibles
+        </label>
+
+        </fieldset>
+        <button type="submit">Aplicar</button>
+    </form>
+</body>
+</html>

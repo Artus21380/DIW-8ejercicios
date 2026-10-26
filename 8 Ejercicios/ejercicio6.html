@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>404 - Zona no encontrada</title>
+    <style>
+        @keyframes flotar {
+            0% { transform: translateY(0); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-8px); opacity: 0; }
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Cambria, Georgia, serif;
+            background: #15120e;
+            color: #e8d6a3;
+            margin: 0;
+        }
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            color: #c78b32;
+            animation: flotar 2s ease-out forwards;
+        }
+        p {
+            text-align: center;
+            margin: .5rem 1rem;
+        }
+        a {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 1px solid #c78b32;
+            padding: .6rem 1.2rem;
+            border-radius: 4px;
+            color: #e8d6a3;
+            transition: background .3s, color .3s;
+        }
+        a:hover, a:focus {
+            background: #c78b32;
+            color: #15120e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Volver</a>
+        </nav>
+    </header>
+    <h1>404</h1>
+
+    <h2>¡Te has perdido en Azeroth!</h2>
+
+    <p>Esta zona no existe o ha sido consumida por el Vacío.</p>
+    <p>Puede que el portal esté cerrado o que hayas seguido el camino equivocado.</p>
+
+    <a href="index.html">Volver a Ventormenta</a>
+
+    <footer>
+        &copy; José Francisco Argüez Gómez | 2º GS - DAW - X
+    </footer>
+
+</body>
+</html>

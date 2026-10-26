@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+    <title>Legado de Azeroth - Próximamente</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --prim: #b88632;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            background: #17140f;
+            color: #f3e5c0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: .5rem 0;
+            color: #d5a447;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #c9c0ad;
+            margin: 0 0 1.5rem;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            padding: .8rem 1.6rem;
+            font-size: 1rem;
+            border: 1px solid #d5a447;
+            border-radius: 8px;
+            background: var(--prim);
+            color: #17140f;
+            cursor: pointer;
+            transition: transform .3s;
+        }
+
+        button:hover, button:focus {
+            transform: scale(1.05);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            button {
+            transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button type="button" onclick="window.location.href='index.html'">Volver</button>
+        </nav>
+    </header>
+
+    <h1>El legado de Azeroth comienza pronto</h1>
+
+    <p>Estamos preparando nuestra nueva hermandad. ¡Alístate, héroe!</p>
+
+    <button type="button">⚔️ Próximamente </button>
+
+    <footer>
+        &copy; José Francisco Argüez Gómez | 2º GS - DAW - X
+    </footer>
+</body>
+</html>
